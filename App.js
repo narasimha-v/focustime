@@ -19,7 +19,7 @@ export default function App() {
 	const addFocusHistorySubjectWithStatus = (subject, status) => {
 		setFocusHistory([
 			...focusHistory,
-			{ subject, status, key: focusHistory.length + 1 }
+			{ subject, status, key: (focusHistory.length + 1).toString() }
 		]);
 	};
 
